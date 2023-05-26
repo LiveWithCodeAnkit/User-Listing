@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+nav {
+  background-color: #ecf2f9;
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+nav button {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 3px;
+  padding: 0 15px;
+  border-radius: 4px;
+  color: #6200ee;
+  background: transparent;
+  line-height: 1.15;
+  font-size: 14px;
+  height: 36px;
+  word-spacing: 0px;
+  letter-spacing: 0.0892857143em;
+  text-decoration: none;
+  text-transform: uppercase;
+  min-width: 64px;
+  border: 1px solid #6200ee;
+  text-align: center;
+  transition: background 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+nav button:hover {
+  background: #f4f4f4;
+}
+.hero-page {
+  display: flex;
+  margin-top: 10rem;
+  justify-content: center;
+  text-align: center;
+  font-family: "Roboto";
+}
+
+.heading {
+  font-family: "Roboto";
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.card-first {
+  display: grid;
+  width: 50%;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 30px;
+  margin-top: 5rem;
+  color: #4c4c6d;
+}
+
+.card-inside {
+  padding: 1rem;
+  max-height: 15rem;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f5f6;
+  border-radius: 20%;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+}
+.card-inside img {
+  border-radius: 100%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination-btn {
+  width: 50%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.pagination-btn button {
+  font-weight: 900;
+  background-color: rgba(0, 0, 255, 0.2);
+  border: none;
+  padding: 1rem;
+  border-radius: 20%;
+}
+.loader {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.loader img {
+  width: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-first {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .heading h1 {
+    font-size: 20px;
+  }
+}
